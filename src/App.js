@@ -27,14 +27,14 @@ class App extends Component {
    render() {
       return (
          <Router>
-            <div>
+            <React.Fragment>
                <Menu />
                <div className="container">
                   <div className="row">
                      {this.showContentMenus(routes)}
                   </div>
                </div>
-            </div>
+            </React.Fragment>
          </Router>
       );
    }
